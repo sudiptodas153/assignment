@@ -1,12 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Documents profile</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- daysi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
 </head>
-<body>
-    <h3>sudipto das</h3>
-    <h1>miha vai</h1>
+
+<body class="lg:px-4">
+
+    <header>
+
+        <nav class="hidden lg:flex">
+            <div class="navbar bg-yellow-50">
+                <div class="navbar-start">
+                    <a class="btn bg-lime-400 font-bold ">Blog</a>
+                </div>
+                <div class="lg:navbar-center">
+                    <a class="btn btn-ghost text-xl"><img class="w-[17%]" src="assets/logo.png" alt=""><span
+                            class="font-boldt">Donate
+                            Bangladesh</span></a>
+                </div>
+                <div class="navbar-end ">
+                    <a class="flex items-center gap-1 font-bold"><img class="w-6" src="assets/coin.png" alt=""><span
+                            class="font-semibold">6000</span>BDT</a>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class=" lg:hidden flex items-center mt-3 gap-10">
+
+
+            <div class="">
+                <a class="btn btn-ghost text-xl"><img class="w-[17%]" src="assets/logo.png" alt=""><span
+                        class="font-bold">Donate
+                        Bangladesh</span></a>
+            </div>
+
+            <div>
+                <div class="relative">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm text-center dropdown-content bg-base-100 rounded-box z-[1] mt-3 shadow absolute right-0">
+                            <li><a href=""></a> <a class="flex items-center gap-1 font-bold"><span
+                                        class="font-semibold">6000</span>BDT</a>
+                            </li>
+                            <li><a class="font-bold" href="">Blog</a></li>
+                            <li><a class="font-bold" href="">History</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section>
+            <div class="text-center mt-16 space-x-2">
+                <a class="btn w-24" href="">Donation</a>
+                <a class="btn w-24" href="">History</a>
+            </div>
+        </section>
+
+        <!-- Donarion Noakhali -->
+
+        <section class="mt-11 px-5 ">
+            <div class=" border-2 border-gray-100 rounded-2xl">
+                <div class="hero-content flex-col lg:flex-row">
+                    <img src="./assets/noakhali.png" class=" rounded-lg shadow-2xl lg:w-[50%]" />
+                    <div>
+                        <a class="flex btn mt-4 lg:w-[25%] items-center font-bold " href=""><img class="w-4 h-4"
+                                src="./assets/coin.png" alt=""><span class="pr-1 font-semibold">0</span>BDT</a>
+                        <h1 class=" font-bold mt-3 text-xl\">Donate for flood at Noakhali</h1>
+                        <p class="py-6">
+                            The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                            donation will help provide essential supplise and to those affected by this disaster. Every
+                            contribution, big or small, makes difference. Please join us in supporting the relief
+                            efforts and making a possitive impact on the lives of those in need.
+                        </p>
+                        <input class="mb-4 p-3 rounded-lg border-2 border-gray-100 w-full" type="text"
+                            placeholder="Write Donation Amount">
+                        <button class="btn bg-lime-400 w-full font-bold text-[17px]">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donarion Feni -->
+
+        <section class="mt-11 px-5 ">
+            <div class=" border-2 border-gray-100 rounded-2xl">
+                <div class="hero-content flex-col lg:flex-row">
+                    <img src="./assets/noakhali.png" class=" rounded-lg shadow-2xl lg:w-[50%]" />
+                    <div>
+                        <a class="flex btn mt-4 lg:w-[25%] items-center font-bold " href=""><img class="w-4 h-4"
+                                src="./assets/coin.png" alt=""><span class="pr-1 font-semibold">0</span>BDT</a>
+                        <h1 class=" font-bold mt-3 text-xl\">Donate for flood at Noakhali</h1>
+                        <p class="py-6">
+                            The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                            donation will help provide essential supplise and to those affected by this disaster. Every
+                            contribution, big or small, makes difference. Please join us in supporting the relief
+                            efforts and making a possitive impact on the lives of those in need.
+                        </p>
+                        <input class="mb-4 p-3 rounded-lg border-2 border-gray-100 w-full" type="text"
+                            placeholder="Write Donation Amount">
+                        <button class="btn bg-lime-400 w-full font-bold text-[17px]">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Extra -->
+
+    </main>
+
 </body>
+
 </html>
